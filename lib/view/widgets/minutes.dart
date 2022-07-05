@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-class Minutes extends StatelessWidget {
+class Minutes extends StatefulWidget {
   const Minutes({Key? key}) : super(key: key);
 
+  @override
+  State<Minutes> createState() => _MinutesState();
+}
+
+class _MinutesState extends State<Minutes> {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;

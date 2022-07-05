@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:neumorphism_clock/view/clock.dart';
+import 'package:neumorphism_clock/view/pages/clock.dart';
 
 void main() {
   runApp(const MyApp());

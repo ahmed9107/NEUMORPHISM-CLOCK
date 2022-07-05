@@ -2,9 +2,14 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-class Hours extends StatelessWidget {
+class Hours extends StatefulWidget {
   const Hours({Key? key}) : super(key: key);
 
+  @override
+  State<Hours> createState() => _HoursState();
+}
+
+class _HoursState extends State<Hours> {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -21,7 +26,7 @@ class Hours extends StatelessWidget {
               height: height * 0.06,
               width: 4,
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Colors.black,
                 borderRadius: BorderRadius.circular(32),
               ),
             ),
